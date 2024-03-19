@@ -9,8 +9,7 @@ class FileStorage:
     __objects = {}
 
     def all(self, cls=None):
-        """Return a list of objects of the specified class,
-        or of all objects if cls is None."""
+        """Return a list of objects of the specified class"""
         if cls is None:
             return list(self.__objects.values())
         else:
